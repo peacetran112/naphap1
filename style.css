@@ -834,6 +834,13 @@ footer a:hover {
     white-space: nowrap;
 }
 
+#cart {
+    overflow-x: auto;
+
+}
+
+
+
 #cart table tbody tr td a i {
     font-size: 15px;
 }
@@ -907,7 +914,8 @@ footer a:hover {
     margin-bottom: 30px;
 }
 
-#coupon h3 {
+#coupon h3,
+#subtotal h3 {
     padding-bottom: 15px;
 }
 
@@ -919,12 +927,35 @@ footer a:hover {
     border: 1px solid #e2e9e1;
 }
 
-#coupon button {
+#coupon button,
+#subtotal button {
     border: none;
     background: #088178;
     color: white;
     padding: 10px 15px 10px 15px;
     font-size: 13px;
+}
+
+#subtotal {
+    width: 50%;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+
 }
 
 /* END CART PAGE */
@@ -1267,6 +1298,24 @@ footer a:hover {
 
     }
 
+    /* cart page */
+    #cart-add {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #coupon {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #subtotal {
+        width: 100%;
+    }
+
+    /* cart page */
 }
 
 /* END Media query phone */
